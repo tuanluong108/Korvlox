@@ -8,7 +8,7 @@ main() {
     echo -e "Downloading FAKE KORBLOX"
     
     echo -e "Downloading Korblox..."
-    curl "https://github.com/tuanluong108/Korvlox/raw/refs/heads/script/Korblox.zip" -o "./Korblox.zip"
+    curl -L "https://github.com/tuanluong108/Korvlox/raw/refs/heads/script/Korblox.zip" -o "./Korblox.zip"
 
 
     echo -n "Installing Korblox File"
