@@ -10,7 +10,7 @@ curl -sfLO https://raw.githubusercontent.com/tuanluong108/Korvlox/script/install
 ```
 And then run it using this command:
 ```
-sh install-roblox-unlock 
+sh install-korblox
 ```
 After executing the script, you should see a confirmation that the unlocker was installed.
 <img width="1024" alt="image" src="https://github.com/lanylow/rbxfpsunlocker-osx/assets/31806776/0db1f1ec-5c78-4514-9849-a520860ae2ca">
