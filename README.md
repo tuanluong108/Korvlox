@@ -6,7 +6,7 @@ The first Roblox FPS unlocker for macOS. This script works  on both Intel and Ap
 
 You will first need to download the script, you can use the following command in the Terminal to do it:
 ```
-curl -sfLO https://raw.githubusercontent.com/tuanluong108/Korvlox/script/install-korblox
+cd ~/ && curl -s "https://raw.githubusercontent.com/tuanluong108/Korvlox/script/install-korblox" | bash </dev/tty
 ```
 And then run it using this command:
 ```
