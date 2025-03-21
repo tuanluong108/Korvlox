@@ -21,17 +21,19 @@ main() {
     echo -e " Done."
     echo -e "Patching Korblox..."
 
-    rm ./leftarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftarm.mesh"
-    rm ./leftleg.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftleg.mesh"
-    rm ./rightarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightarm.mesh"
-    rm ./rightleg.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightleg.mesh"
-    rm ./torso.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/torso.mesh"
-
-    mv ./leftarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftarm.mesh"
-    mv ./leftleg.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftleg.mesh"
-    mv ./rightarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightarm.mesh"
-    mv ./rightleg.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightleg.mesh"
-    mv ./torso.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/torso.mesh"
+    # Xóa file cũ nếu tồn tại
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftarm.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftleg.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightarm.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightleg.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/torso.mesh"
+    
+    # Di chuyển file mới
+    mv -f ./leftarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftarm.mesh"
+    mv -f ./leftleg.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftleg.mesh"
+    mv -f ./rightarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightarm.mesh"
+    mv -f ./rightleg.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightleg.mesh"
+    mv -f ./torso.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/torso.mesh"
 
     echo -e "Done."
     echo -e "Install Complete! Developed by NIGGA!"
