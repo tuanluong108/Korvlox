@@ -10,12 +10,10 @@ main() {
     echo -e "Downloading Korblox..."
     curl "https://github.com/tuanluong108/Korvlox/raw/refs/heads/script/Korblox.zip" -o "./Korblox.zip"
 
-    mv ~/Korblox.zip ~/Downloads/
-    cd ~/Downloads
-    unzip Korblox.zip
-
 
     echo -n "Installing Korblox File"
+    mv ~/Korblox.zip ~/Downloads/
+    cd ~/Downloads
     unzip -o -q "./Korblox.zip"
     echo -e "Done."
 
