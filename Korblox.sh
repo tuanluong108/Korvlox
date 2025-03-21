@@ -7,16 +7,16 @@ main() {
 
     echo -e "Downloading FAKE KORBLOX"
     
-    echo -e "Downloading MacSploit..."
-    curl "https://github.com/tuanluong108/Korvlox/raw/refs/heads/script/korblox.zip" -o "./korblox.zip"
+    echo -e "Downloading Korblox..."
+    curl "https://github.com/tuanluong108/Korvlox/raw/refs/heads/script/korblox.zip" -o "./Korblox.zip"
 
     echo -n "Installing Korblox File"
-    unzip -o -q "./korblox.zip"
+    unzip -o -q "./Korblox.zip"
     echo -e "Done."
 
     
     echo -e " Done."
-    echo -e "Patching Roblox..."
+    echo -e "Patching Korblox..."
 
     rm ./leftarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftarm.mesh"
     rm ./leftleg.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftleg.mesh"
