@@ -21,14 +21,32 @@ main() {
     echo -e " Done."
     echo -e "Patching Korblox..."
 
-    # Xóa file cũ nếu tồn tại
+    # Delete Leg
     rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftarm.mesh"
     rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftleg.mesh"
     rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightarm.mesh"
     rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightleg.mesh"
     rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/torso.mesh"
+
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/head.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headA.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headB.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headC.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headD.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headE.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headF.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headG.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headH.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headI.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headJ.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headK.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headL.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headM.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headN.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headO.mesh"
+    rm -f "/Applications/Roblox.app/Contents/Resources/content/avatar/heads/headP.mesh"
     
-    # Di chuyển file mới
+    # Add Korblox
     mv -f ./leftarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftarm.mesh"
     mv -f ./leftleg.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/leftleg.mesh"
     mv -f ./rightarm.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/rightarm.mesh"
@@ -36,6 +54,7 @@ main() {
     mv -f ./torso.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/torso.mesh"
 
     echo -e "Done."
+    rm -f "/Korblox.zip"
     echo -e "Install Complete! Developed by NIGGA!"
     exit
 }
