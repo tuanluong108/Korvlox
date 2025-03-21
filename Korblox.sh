@@ -54,7 +54,7 @@ main() {
     mv -f ./torso.mesh "/Applications/Roblox.app/Contents/Resources/content/avatar/meshes/torso.mesh"
 
     echo -e "Done."
-    rm -f "/Korblox.zip"
+    rm -f ~/Downloads/Korblox.zip
     echo -e "Install Complete! Developed by NIGGA!"
     exit
 }
