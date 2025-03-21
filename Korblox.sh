@@ -14,7 +14,7 @@ main() {
     echo -n "Installing Korblox File"
     mv ~/Korblox.zip ~/Downloads/
     cd ~/Downloads
-    unzip -o -q "./Korblox.zip"
+    unzip "./Korblox.zip"
     echo -e "Done."
 
     
